@@ -1,31 +1,35 @@
 import React from 'react';
-import { Link } from 'react-scroll';
+// import { Link } from 'react-scroll';
 import logoImage from './logo1.png';
+import { NavLink, Link } from 'react-router-dom';
 
 
 function Header() {
   return (
     <header>
       <nav className="navbar navbar-expand-lg">
-        <a className="navbar-brand" href="#"> 
-         {/* <img src={logoImage} width= '5%' alt="Logo" /> */}
-         </a>
+        <NavLink className="navbar-brand" to="/">
+         {/* <img src={logoImage} width='5%' alt="Logo" /> */}
+        </NavLink>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <Link className="nav-link" activeClass="active" to="home" spy={true} smooth={true}>Home</Link>
+              <NavLink className="nav-link" activeClassName="active" to="/">Home</NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" activeClass="active" to="about" spy={true} smooth={true}>About</Link>
+            <Link to="/about" className="nav-link" activeClassName="active">
+                  About
+                </Link>
+
             </li>
             <li className="nav-item">
-              <Link className="nav-link" activeClass="active" to="contact" spy={true} smooth={true}>Contact</Link>
+              <NavLink className="nav-link" activeClassName="active" to="contact">Contact</NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" activeClass="active" to="portfolio" spy={true} smooth={true}>Portfolio</Link>
+              <NavLink className="nav-link" activeClassName="active" to="portfolio">Portfolio</NavLink>
             </li>
           </ul>
         </div>

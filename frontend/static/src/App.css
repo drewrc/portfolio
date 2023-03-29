@@ -181,6 +181,41 @@ table {
   }
 }
 
+/* about me */
+
+.about-list {
+  margin: 20px 0;
+}
+
+.about-list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.about-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.about-list-item-title {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.about-list-item-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.education-item {
+  margin-bottom: 10px;
+}
+
+
+
 
 /* body{ 
   display: flex;
