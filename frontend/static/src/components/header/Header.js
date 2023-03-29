@@ -1,12 +1,15 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-// import './Header.css';
+import logoImage from './logo1.png';
+
 
 function Header() {
   return (
     <header>
       <nav className="navbar navbar-expand-lg">
-        <a className="navbar-brand" href="#">Drew</a>
+        <a className="navbar-brand" href="#"> 
+         {/* <img src={logoImage} width= '5%' alt="Logo" /> */}
+         </a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>

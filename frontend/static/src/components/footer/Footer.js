@@ -5,7 +5,7 @@ function Footer() {
         justifyContent: 'center',
         height: '100px',
         fontSize: '20px',
-        color: 'white',
+        color: 'rgb(34, 33, 33)',
       };
     return (
         <footer 
