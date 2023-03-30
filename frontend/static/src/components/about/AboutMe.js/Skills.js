@@ -3,7 +3,7 @@ function Skills() {
     return (
         <span className="about-list-item-content">
         <h3
-        className="main-container" id="header-main">
+        className="main-container">
             Skills
         </h3>
         <div className="education-item">

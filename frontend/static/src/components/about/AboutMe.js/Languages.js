@@ -2,9 +2,8 @@ function Languages() {
 
     return(
         <span className="about-list-item-content">
-        <h3
-        className="main-container" id="header-main">
-            Languages
+        <h3 className="main-container" id="header-about-list">
+          Languages
         </h3>
         <div className="education-item">
             <ul>
