@@ -11,11 +11,10 @@ function Main() {
             <div  id="main-wrapper"> 
             <div id="main-container">
                 <div id="main-container-text">
-                <h4>
-                        Hello, my name is </h4> 
+                <h4> Hello, my name is</h4> 
                         <h3  className="main-container" id="header-main">Drew</h3> 
                     <h2 id="header-minor">  
-                        I'm excited to share my work with you... 
+                        I'm excited to share my work with you. 
                     </h2>
                     </div>
                 </div> 
