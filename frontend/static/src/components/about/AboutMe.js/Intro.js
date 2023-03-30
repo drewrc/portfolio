@@ -5,7 +5,14 @@ function Intro() {
 
     return (
         <ul>
-        <h3 className="main-container" id="header-about">
+        <h3 
+        style={{
+            marginTop: "5%",
+            paddingLeft: "5%",
+            borderTop: '5px solid rgb(247, 239, 239, 0.2)',
+            borderLeft: '5px solid rgb(247, 239, 239, 0.2)',
+        }}
+        className="main-container" id="header-about">
           About Me
         </h3>
         <li>

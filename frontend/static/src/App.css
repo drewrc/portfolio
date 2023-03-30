@@ -312,9 +312,11 @@ h4 {
   border: 7px solid rgba(255, 255, 255, 0.7);
   opacity: 0.8;
 }
+
 .education-item {
   margin-bottom: 10px;
-
+  margin-left: 10%;
+  width: 80%;
 }
 
 
@@ -456,6 +458,14 @@ li {
   padding-top: 10%;
   font-family: Arial, Helvetica, sans-serif;
 }
+#header-about-list-skill {
+  font-size: 90px;
+  text-shadow: rgb(78, 20, 78, 0.2) 1px 1px 1px;
+  font-weight: 700;
+  padding-right: 10%;
+  padding-top: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 #rendered-about{
 
@@ -464,9 +474,40 @@ li {
   height: 100vh;
 }
 
+#skill {
+  background-color: rgb(255, 255, 255, 0.2);
+  font-size: 25px;
+  margin: 2%;
+  padding: 5%;
+}
+#skill:nth-child(odd) {
+  text-align: left;
+}
+#skill:nth-child(even) {
+  text-align: right;
+}
+#language {
+  background-color: rgb(255, 255, 255, 0.2);
+  font-size: 35px;
+  margin-left: -20%;
+  margin-right: -40%;
+  margin-bottom: 2%;
+  padding: 10%;
+}
+#language:nth-child(odd) {
+  text-align: left;
+}
+#language:nth-child(even) {
+  text-align: right;
+}
+
+
 
 /* Responsive styles for screens smaller than 768px */
 @media screen and (max-width: 767px) {
+  .education-item{
+    width: 100%;
+  }
   .square {
     /* height: 150px;
     width: 150px; */
@@ -499,18 +540,40 @@ li {
     margin-left: -20%;
     margin-right: -40%;
   }
+  #skill {
+    margin-left: -20%;
+    margin-right: -40%;
+    font-size: 15px;
+  }
+  #language {
+    font-size: 30px;
+  }
   #side-nav-item {
     font-size: 30px;
   }
   #header-about-list {
-    font-size: 50px;
+    font-size: 55px;
+    padding-right: 0%;
+    margin-top: 15%;
+    margin-left: -5%;
+    padding-left: 10%;
+    margin-bottom: 15%;
+    padding-right:15%;
+    overflow-wrap: break-word;
+    border-top: 5px solid rgb(247, 239, 239, 0.2);
+    border-right: 5px solid rgb(247, 239, 239, 0.2);
+  
+    /* margin-right: -30%; */
+  }
+  #header-about-list-skill {
+    font-size: 80px;
     padding-right: 0%;
     padding-top: 15%;
-    padding-bottom: 15%;
+  
     /* margin-right: -30%; */
   }
   #side-nav-list {
-    height: 120vh;
+    height: 100vh;
   }
 }
 
@@ -521,7 +584,7 @@ li {
 }
 .square:nth-child(5n + 1) {
   animation: rotate linear 5s infinite;
-  
+
 }
 .square:nth-child(5n + 2) {
   animation: rotate linear 5s infinite;
