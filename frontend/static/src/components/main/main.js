@@ -1,20 +1,59 @@
-import React from 'react';
-import './styles.css';
+import React, { useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import TriangleCanvas from '../magicfairydust/Triangle';
 
 function Main() {
 
+
     return(
         <>
+      
         <main>
-            <div  id="main-container">
-                    <h3 className="main-container" id="header-main">
-                        Hello, my name is Drew </h3>
+            <div  id="main-wrapper"> 
+            <div id="main-container">
+                <div id="main-container-text">
+                <h4>
+                        Hello, my name is </h4> 
+                        <h3  className="main-container" id="header-main">Drew</h3> 
                     <h2 id="header-minor">  
                         I'm excited to share my work with you... 
                     </h2>
-                </div>          
+                    </div>
+                </div> 
+            </div>
+            <div class="board">
+            <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        </div>
         </main>
         </>
     )

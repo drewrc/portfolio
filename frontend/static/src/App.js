@@ -1,6 +1,6 @@
 import './App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Link, NavLink, useNavigate, Navigate } from "react-router-dom";
 import { AuthContext } from "./components/auth-context/AuthContext";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -15,6 +15,8 @@ import Contact from './components/contact/Contact';
 
 
 function App() {
+
+
   // const { } = useContext(AuthContext);
   return (
     <>
