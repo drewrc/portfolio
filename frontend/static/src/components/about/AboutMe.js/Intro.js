@@ -1,21 +1,48 @@
 import React from 'react';
 import selfie from './selfie.png';
+import { Col, Row, Container } from 'react-bootstrap';
 
 function Intro() {
 
     return (
-        <ul>
+        <>
+      
+<Container
+  >
+    <Row
+    >
+        <Col
+        xs={12}
+      
+        style={{
+            height: "100vh",
+            overflowY: "scroll",
+        }}
+        >
+        <div >
         <h3 
         style={{
             marginTop: "5%",
-            paddingLeft: "5%",
+            // paddingLeft: "5%",
             borderTop: '5px solid rgb(247, 239, 239, 0.2)',
             borderLeft: '5px solid rgb(247, 239, 239, 0.2)',
         }}
-        className="main-container" id="header-about">
+        className="main-container"
+        id="header-about"
+        >
           About Me
         </h3>
-        <li>
+        <p
+        id="title"
+        style={{
+            textAlign: "right",
+            padding: "10px",
+            // marginLeft: "20%",
+            // width: "100%",
+            backgroundColor: "rgb(247, 239, 239, 0.2)",
+             }}
+        >Fullstack Software Engineer</p>
+        <div>
         <img id="selfie" src={selfie} width="200px" alt="selfie" />
         <span 
             id="about-3"
@@ -25,11 +52,11 @@ function Intro() {
             Greenville, SC
             </p>
         </span>
-        </li>
-        <li>
+        </div>
+        <div>
     
-        </li>
-        <li>
+        </div>
+        <div>
         <span 
         style={{
             marginTop: "5%",
@@ -46,8 +73,14 @@ function Intro() {
                 textAlign: "left"}}> 2 years of self-taught experience and education combined.</p>
            
             </span>
-        </li>
-        </ul>
+        </div>
+        </div>
+        </Col>
+    </Row>
+</Container>
+
+</>
+  
     )
 }
 

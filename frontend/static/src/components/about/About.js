@@ -27,7 +27,7 @@ function About() {
                     <SideNav activeTab={activeTab} setActiveTab={setActiveTab} />
                     </div>
                 </Col>
-                <Col xs={6}>
+                <Col xs={8}>
                 <div
                 id="rendered-about">
                     {activeTab === "intro" && <Intro />}

@@ -6,7 +6,7 @@ import { NavLink, Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <header>
+    <header id="fixed">
       <nav className="navbar navbar-expand-lg">
       {/* <img src={logoImage} width='15%' alt="Logo" /> */}
         <NavLink className="navbar-brand" to="/">

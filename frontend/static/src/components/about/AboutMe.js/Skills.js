@@ -6,7 +6,13 @@ function Skills() {
 
             
               
-                <span className="about-list-item-content">
+                <span 
+
+                 style={{
+                    height: "100vh",
+                    overflowY: "scroll",
+                }}
+                className="about-list-item-content">
 
       
                         <h3
@@ -21,11 +27,24 @@ function Skills() {
                         className="main-container">
                             Skills
                         </h3>
+                        <p
+                        style={{
+                            textAlign: "right",
+                            padding: "10px",
+                            // marginLeft: "20%",
+                            width: "100%",
+                            backgroundColor: "rgb(247, 239, 239, 0.2)",
+                            }}
+                        >skills I've learned... </p>
                         <div className="education-item">
                             <ul>
              
                
-                        <li id="skill">Frontend/Backend</li>
+                        <li 
+                            //  style={{
+                            //     width: "100%",
+                            //     }}
+                        id="skill">Frontend/Backend Development</li>
                             <li id="skill">API Integration</li>
                             <li id="skill">Version control and Git</li>
                             <li id="skill">Wireframes</li>

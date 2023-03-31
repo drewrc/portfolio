@@ -1,20 +1,36 @@
-// import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-// import { faGraduationCap } from '@fortawesome/fontawesome-free-solid';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
+
 function Education() {
     return (
-
         <span 
-    
+        style={{
+            height: "100vh",
+            overflowY: "scroll",
+        }}
         className="about-list-item-content">
         <h3
             style={{
                 marginTop: "5%",
                 borderTop: '5px solid rgb(247, 239, 239, 0.2)',
-                borderRight: '5px solid rgb(247, 239, 239, 0.2)',
+                borderLeft: '5px solid rgb(247, 239, 239, 0.2)',
+                // fontSize: "2.5rem",
             }}
         className="main-container" id="header-about-list">
+            <FontAwesomeIcon 
+    
+            icon={faGraduationCap} />
             Education
         </h3>
+        <p
+        style={{
+            textAlign: "right",
+            padding: "10px",
+            // marginLeft: "20%",
+            // width: "100%",
+            backgroundColor: "rgb(247, 239, 239, 0.2)",
+             }}
+        >...places I've learned </p>
         <div className="education-item">
             <p 
             style={{
