@@ -5,5 +5,5 @@ app_name = "portfolio"
 
 
 urlpatterns = [
-#    path('', include('accounts.urls'), name="accounts"),
+   path('', include('accounts.urls'), name="accounts"),
 ]

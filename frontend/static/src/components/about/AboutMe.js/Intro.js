@@ -13,7 +13,7 @@ function Intro() {
     >
         <Col
         xs={12}
-      
+        id="about-me-container"
         style={{
             height: "100vh",
             overflowY: "scroll",
@@ -41,7 +41,7 @@ function Intro() {
             // width: "100%",
             backgroundColor: "rgb(247, 239, 239, 0.2)",
              }}
-        >Fullstack Software Engineer</p>
+        >Full-Stack Software Engineer</p>
         <div>
         <img id="selfie" src={selfie} width="200px" alt="selfie" />
         <span 
