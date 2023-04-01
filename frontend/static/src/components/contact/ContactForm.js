@@ -3,7 +3,7 @@ import { Button, Form, Modal } from "react-bootstrap";
 
 function ContactForm() {
   const [show, setShow] = useState(false);
-  const [email, setEmail] = useState("drewrc00@gmail.com");
+  const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -20,7 +20,7 @@ function ContactForm() {
   useEffect(() => {
     const sendEmail = async () => {
       try {
-        const response = await fetch("portfolio/send-email/", {
+        const response = await fetch("/portfolio/send-email/", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

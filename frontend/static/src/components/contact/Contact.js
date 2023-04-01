@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone, faUserGroup } from "@fortawesome/free-solid-svg-icons";
 import linkedIn from "./LI-In-Bug.png";
 import github from "./github-mark.png";
+import fiverr from './icons8-fiverr-30.png'
+import upwork from './icons8-upwork-a-global-freelancing-platform-where-professionals-connect-and-collaborate-remotely-24.png'
 
 
 function Contact() {
@@ -50,8 +52,23 @@ function Contact() {
                 <p className="social-text">
                 <a 
                     style={{marginRight: "5px"}}
-                href="https://www.linkedin.com/in/drew-coker/"> <img src={linkedIn} width="2.5%" style={{ filter: "brightness(0) saturate(100%) invert(16%)" }}/></a>
-                <a href="https://github.com/drewrc/"><img src={github} width="2.5%" /></a>    
+                href="https://www.linkedin.com/in/drew-coker/"> 
+                <img src={linkedIn} width="5.5%" style={{ filter: "brightness(0) saturate(100%) invert(16%)" }}/></a>
+                <a href="https://github.com/drewrc/">
+                    <img src={github} width="5.5%" />
+                    </a>    
+                <a 
+                style={{paddingLeft: "5px"}}
+                href="https://www.fiverr.com/drewcoker335/">
+                    {/* <img src={github} width="2.5%" /> */}
+                    <img src={fiverr} width="8.5%" />
+                    </a>   
+                    <a 
+                       style={{paddingLeft: "5px"}}
+                    href="https://www.upwork.com/freelancers/~01c0dd05b30a24a4ab/">
+                    {/* <img src={github} width="2.5%" /> */}
+                    <img src={upwork} width="5.5%" />
+                    </a>  
                 </p>
                 <p><ContactForm /></p>
             </Col>

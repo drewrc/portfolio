@@ -13,6 +13,7 @@ def send_email(request):
     message = request.data.get('message', '')
     sender = request.data.get('sender', '')
     recipient = request.data.get('recipient', '')
+    recipient = 'drewrc00@gmail.com'
     
     send_mail(
         subject=subject,
