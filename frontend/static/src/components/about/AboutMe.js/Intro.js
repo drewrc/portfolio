@@ -43,15 +43,15 @@ function Intro() {
              }}
         >Full-Stack Software Engineer</p>
         <div>
-        <img id="selfie" src={selfie} width="200px" alt="selfie" />
-        <span 
-            id="about-3"
-        className="about-list-item-content">
-            Drew Coker
-            <p id="city" className="about-list-item-content">
-            Greenville, SC
-            </p>
-        </span>
+       
+        <span id="about-3" className="about-list-item-content" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center',}}>
+            <img id="selfie" src={selfie} width="200px" alt="selfie" style={{ marginRight: '1em' }} />
+            <div>
+                <p>Drew Coker</p>
+                <p className="about-list-item-content">Greenville, SC</p>
+            </div>
+            </span>
+
         </div>
         <div>
     
@@ -62,15 +62,19 @@ function Intro() {
             marginTop: "5%",
             textAlign: "right"}}
         className="about-list-item-content">
-            <p
-                 id="about-1"
-            >
-            Recent graduate of Carolina Code School interested in transitioning from nursing into a software developer role.
-            </p>
+
             <p
             id="about-2"
              style={{
-                textAlign: "left"}}> 2 years of self-taught experience and education combined.</p>
+                textAlign: "left"}}>
+                Full-Stack Software Engineer with a background in nursing. I am passionate about creating applications that are user-friendly and intuitive. I am a lifelong learner and am always looking for new ways to improve my skills. I am currently seeking a position as a software developer where I can continue to grow and learn.
+                </p>
+            {/* <p
+                 id="about-1"
+            >
+            Recent graduate of Carolina Code School interested in transitioning from nursing into a software developer role.
+            </p> */}
+            
            
             </span>
         </div>

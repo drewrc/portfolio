@@ -5,6 +5,7 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.response import Response
 from rest_framework.permissions import AllowAny
 from django.core.mail import send_mail
+import requests
 
 @api_view(['POST'])
 @permission_classes([AllowAny])
@@ -24,3 +25,11 @@ def send_email(request):
     )
     
     return Response({'message': 'Email sent successfully!'})
+
+
+@api_view(['GET'])
+@permission_classes([AllowAny])
+def github_repos(request):
+    response = requests.get(f'https://api.github.com/users/drewrc/repos')
+    repos = response.json()
+    return Response(repos)

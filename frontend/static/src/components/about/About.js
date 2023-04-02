@@ -14,8 +14,6 @@ function About() {
         <Container>
             <Row
             style={{
-                // backgroundColor: "white",
-                // paddingTop: "5%",
             }}
             >
                 <Col 

@@ -138,7 +138,7 @@ table {
   flex-direction: column;
   align-items: left;
   justify-content: center;
-  height: 100vh; 
+  /* height: 100vh;  */
   width: 100vw;
   /* background: linear-gradient(120deg, rgb(190, 4, 232) 0%, rgb(139, 4, 236) 50%, rgb(3, 162, 165) 100%); */
   /* background-color: rgb(3, 0, 10); */
@@ -151,18 +151,20 @@ table {
   padding-bottom: 20%;
   margin-left: 10%;
   margin-right: 10%;
+
   /* padding-left: 20%; */
   /* background-color: rgba(178, 178, 194, 0.2); */
   /* box-shadow: #9d00ff 1px 1px 1px; */
   /* left: -100vw; */
 }
 #main-wrapper {
-  height: 100vh; 
+  height: 200vh; 
+  
 }
 #main-container-text {
   position: relative;
   z-index: 100;
-
+  margin-top: 10%;
 }
 
 #header-main:hover {
@@ -222,19 +224,56 @@ h4 {
   margin-right: 25%;
   font-family: 'Teko', sans-serif;
 }
+
 #contact-header {
   font-family: 'Teko', sans-serif;
   /* font-family: Arial, Helvetica, sans-serif; */
-  font-size: 50px ;
+  font-size: 100px ;
   font-weight: bold;
   text-transform: uppercase;
 }
 .social-text {
   font-family: 'Space Mono', monospace;
 }
+.icon {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  margin-top: 10%;
+  margin-right: 5%;
+  width: 100px;
+  height: 100px;
+}
+.hidden {
+  display: hidden;
+}
+#icons-wrapper {
+  background-color: rgb(255, 254, 254, 0.2);
+  text-align: center;
+  /* width: 100vw; */
+  display: flex;
+  opacity: 0;
+  /* flex-direction: row; */
+  /* justify-content: center;
+  align-items: center; */
+  /* margin-top: 10%; */
+  /* margin-bottom: 10%; */
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: -15%;
+  z-index: 100;
+}
+/* @keyframes fadeIn {
+  from { opacity: 0; transform: translate(0, 20px); }
+  to { opacity: 1; transform: translate(0, 0); }
+} */
+
 
 
 @media screen and (min-width: 1200px) {
+
   #header-main {
     font-size: 150px;
   }
@@ -257,6 +296,9 @@ h4 {
 }
 
 @media screen and (max-width: 600px) {
+  #icons-wrapper {
+    margin-top: 0%;
+  }
   #header-main {
     font-size: 140px;
     cursor: none;
@@ -267,17 +309,16 @@ h4 {
   }
   #main-container {
     position: relative;
-    height: 50vh; 
+    /* height: 200vh;  */
     margin-left: 0%;
     margin-right: 0%;
     padding-left: 10%;
     padding-right: 10%;
   }
   #main-container-text {
-    margin-top: 40%;
+    margin-top: 10%;
   }
   .education-item {
-
     /* margin-left: 20%; */
   }
 }
@@ -422,7 +463,7 @@ h4 {
   top: 0;
   left: 0%;
   width: 100%;
-  height: 100vh;
+  height: 210vh;
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
