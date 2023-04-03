@@ -28,7 +28,7 @@ function Restaurant() {
             id="portfolio-header"
             >Vic's Pizza</h3>
             <p>
-            ReactJS, Python, Django/Django Rest Framework, HTML, CSS, Bootstrap
+            ReactJS, Python, HTML, CSS, Bootstrap
             </p>
             <p>
             At Vic's Pizza, our main focus is to provide customers with a visually appealing and easy-to-use platform to explore our mouthwatering pizza menu, customize their orders, and enjoy a hassle-free checkout process. 
