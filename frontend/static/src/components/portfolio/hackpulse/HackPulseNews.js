@@ -23,7 +23,9 @@ function HackPulse() {
             padding: '2%',
           }}
           xs={6}>
-            <h3>HackPulse News</h3>
+            <h3
+             id="portfolio-header"
+            >HackPulse News</h3>
             <p>
             ReactJS, Python, Django/Django Rest Framework, HTML, CSS, Bootstrap
             </p>

@@ -22,8 +22,11 @@ function TurnBasedGame() {
                 backgroundColor: 'rgb(247, 239, 239, 0.2)',
                 padding: '2%',
             }}
+
             xs={6}>
-                <h3>Jurassic Rumble</h3>
+                <h3
+                
+                >Jurassic Rumble</h3>
                 <p>
                 CSS, HTML, Midjourney AI, JavaScript, Bootstrap      
                 </p>

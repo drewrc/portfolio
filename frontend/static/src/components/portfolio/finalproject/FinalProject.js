@@ -75,7 +75,9 @@ function FinalProject() {
             padding: '2%',
           }}
           xs={6}>
-            <h3>FitBuddies</h3>
+            <h3
+             id="portfolio-header"
+            >FitBuddies</h3>
             <p>
             ReactJS, Python, Django/Django Rest Framework, HTML, CSS
             Twilio API, Google Maps API, Material UI, Toastify, React-

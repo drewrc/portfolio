@@ -24,16 +24,17 @@ function Restaurant() {
             padding: '2%',
           }}
           xs={6}>
-            <h3>Vic's Pizza</h3>
+            <h3 
+            id="portfolio-header"
+            >Vic's Pizza</h3>
             <p>
             ReactJS, Python, Django/Django Rest Framework, HTML, CSS, Bootstrap
             </p>
             <p>
-            Developed a news website allowing submission, editing, rejection, and publication of articles.  
+            At Vic's Pizza, our main focus is to provide customers with a visually appealing and easy-to-use platform to explore our mouthwatering pizza menu, customize their orders, and enjoy a hassle-free checkout process. 
             </p>
             <p>
-            Implemented custom authentication and authorization with Django REST Framework.
-            Designed UI with ReactJS.         
+            The app's responsive design, made possible by Bootstrap, ensures a consistent user experience across all devices, while the combination of ReactJS and HTML enables smooth navigation and real-time updates.  
             </p>
          
           </Col>
@@ -47,7 +48,7 @@ function Restaurant() {
                 padding: '2%',
             }}
             >
-         <a href="//https://github.com/drewrc/react-restaurant-app/"
+         <a href="https://github.com/drewrc/react-restaurant-app/"
             className="logo-link"
             style={{
                 display: 'inline-block',

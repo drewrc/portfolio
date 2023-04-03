@@ -23,7 +23,9 @@ function PixelPerfect() {
             padding: '2%',
           }}
           xs={6}>
-            <h3>Pixel Perfect</h3>
+            <h3
+             id="portfolio-header"
+            >Pixel Perfect</h3>
             <p>
             CSS, HTML, Font-Awesome Icons
             </p>
