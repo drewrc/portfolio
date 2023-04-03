@@ -13,11 +13,10 @@ function About() {
     <main>
         <Container>
             <Row
-            style={{
-            }}
+         
             >
                 <Col 
-              
+                
                 xs={4}>
                 <div 
                 
@@ -25,8 +24,11 @@ function About() {
                     <SideNav activeTab={activeTab} setActiveTab={setActiveTab} />
                     </div>
                 </Col>
-                <Col xs={8}>
+                <Col 
+                   
+                xs={8}>
                 <div
+               
                 id="rendered-about">
                     {activeTab === "intro" && <Intro />}
                     {activeTab === "education" && <Education />}

@@ -1,6 +1,7 @@
 import React from 'react';
 import selfie from './selfie.png';
 import { Col, Row, Container } from 'react-bootstrap';
+import './aboutcss.css';
 
 function Intro() {
 
@@ -18,6 +19,7 @@ function Intro() {
             height: "100vh",
             overflowY: "scroll",
         }}
+        className="about-me-container"
         >
         <div >
         <h3 

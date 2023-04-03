@@ -35,8 +35,10 @@ function Header() {
     //   justifyContent: "center",
     //   alignItems: "center",
     // }}
+
     className="navbar-nav ml-auto">
-      <li className="nav-item">
+      <li
+      className="nav-item">
         <Link className="nav-link" activeClassName="active" to="/">
           Home
         </Link>
@@ -124,7 +126,9 @@ function Header() {
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title>Menu</Offcanvas.Title>
               </Offcanvas.Header>
-              <Offcanvas.Body>{navLinks}</Offcanvas.Body>
+              <Offcanvas.Body
+              className="sidebar-menu"
+              >{navLinks}</Offcanvas.Body>
             </Offcanvas>
           )}
         </Navbar>

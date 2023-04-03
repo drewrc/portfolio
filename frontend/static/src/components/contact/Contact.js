@@ -71,7 +71,7 @@ function Contact() {
                     <img src={upwork} width="5.5%" />
                     </a>  
                 </p>
-                {/* <p><ContactForm /></p> */}
+                <p><ContactForm /></p>
             </Col>
         </Row>
     </Container>

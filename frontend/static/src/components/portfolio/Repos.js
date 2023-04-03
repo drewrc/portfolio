@@ -2,14 +2,22 @@ import { Container, Card, Col } from "react-bootstrap";
 
 function Repo({ repo }) {
   return (
-    <Col md={4} className="mb-4">
+    <Col 
+    // style={{height: "100%"}}
+    md={4} className="mb-4">
       <Card className="h-100">
-        <a href={repo.html_url} target="_blank" rel="noreferrer">
-          <Card.Img
-            variant="top"
-            src={repo.screenshot_url || "https://via.placeholder.com/300x200"}
-          />
-        </a>
+        {repo.description && (
+        <div className="iframe-container">
+          <iframe
+            title={repo.name}
+            src={repo.description}
+            width="100%"
+            height="300px" // Adjust height according to your preference
+            frameBorder="0"
+            className="website-preview"
+          ></iframe>
+        </div>
+        )}
         <Card.Body>
           <Card.Title>
             <a href={repo.html_url} target="_blank" rel="noreferrer">

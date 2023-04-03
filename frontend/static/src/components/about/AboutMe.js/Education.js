@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
+import './aboutcss.css';
 
 function Education() {
     return (
@@ -8,18 +9,18 @@ function Education() {
             height: "100vh",
             overflowY: "scroll",
         }}
-        className="about-list-item-content">
+        className="about-list-item-content custom-scrollbar">
         <h3
             style={{
+                paddingLeft: "5%",
                 marginTop: "5%",
                 borderTop: '5px solid rgb(247, 239, 239, 0.2)',
                 borderLeft: '5px solid rgb(247, 239, 239, 0.2)',
                 // fontSize: "2.5rem",
             }}
         className="main-container" id="header-about-list">
-            <FontAwesomeIcon 
-    
-            icon={faGraduationCap} />
+            {/* <FontAwesomeIcon 
+            icon={faGraduationCap} /> */}
             Education
         </h3>
         <p

@@ -56,9 +56,9 @@ function ContactForm() {
 
   return (
     <div className="social-text">
-      <Button variant="primary" onClick={handleShow}>
+      {/* <Button variant="primary" onClick={handleShow}>
         Contact Me Here
-      </Button>
+      </Button> */}
 
       <Modal show={show} style={{ marginTop: "10%" }} onHide={handleClose}>
         <Modal.Header closeButton>
