@@ -1,9 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import Carousel from 'react-bootstrap/Carousel';
 import { animateScroll } from 'react-scroll';
 import SkillsPreview from './SkillsPreview';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownLong, faLeaf, faMugHot, faSeedling, faStarOfLife, faUserAstronaut, faWandMagic, faWandSparkles } from '@fortawesome/free-solid-svg-icons';
+import PortfolioCarousel from './PortfolioCarousel';
+import SideBarContact from './SideBarNavContact';
+
+
 
 function Main() {
   const containerRef = useRef(null);
@@ -84,20 +89,16 @@ function Main() {
 
   const [buttonStyle, setButtonStyle] = useState({});
 
-
   useEffect(() => {
-    // ...existing code for h2 and h4 animations...
-  
     const buttonTimer = setTimeout(() => {
       setButtonStyle({
         transform: 'translateY(0)',
         opacity: 1,
         transition: 'transform 1s ease-in-out, opacity 1s ease-in-out',
       });
-    }, 2500); // adjust delay as needed
+    }, 2500); 
   
     return () => {
-      // ...existing clearTimeout calls...
       clearTimeout(buttonTimer);
     };
   }, []);
@@ -107,25 +108,19 @@ function Main() {
     opacity: 0,
   };
 
+
   return (
 <>
   <main>
-    <Container>
-      <Row
-      >
-        <Col
-        
-        >
-
+    <Container
+    id="main-container-div">
+      <Row>
+        <Col>
         <div id="main-wrapper">
           <div 
-          
           id="main-container">
             <div id="main-container-text">
               <h4 style={{ ...h4initialStyle, ...h4Style }}> 
-              {/* <FontAwesomeIcon icon={faUserAstronaut} style= {{
-                paddingRight: '10px',
-              }}/> */}
               // hello, my name is</h4>
               <h3 className="main-container" id="header-main">
                 Drew
@@ -138,8 +133,6 @@ function Main() {
             </div>
           </div>
           </div>
-
-
         </Col>
       </Row>
       <Row>
@@ -160,14 +153,16 @@ function Main() {
             >
               <div className="vertical-text">Scroll</div>
               <div className="vertical-text">Down</div>
-              <div>
-              <FontAwesomeIcon icon={faDownLong} />
+              <div className="vertical-text">
+              <FontAwesomeIcon icon={faDownLong} style={{paddingBottom: '5px'}}/> 
               </div>
             </button>
-
-
+            < SideBarContact />
         </Col>
       </Row>
+            <Row>
+              <PortfolioCarousel />
+            </Row>
     </Container>
       </main>
     </>

@@ -2,13 +2,14 @@ function SkillsPreview({containerRef}) {
 
     return(
         <>
+           
                       <div 
                       id="icons-wrapper"
                       style={{
                       }}
                       ref={containerRef}>
                         
-                        {/* <h3 >Languages and Tools:</h3> */}
+                        {/* <h3 >Languages and Tools</h3> */}
                             <p > 
                             <a href="https://getbootstrap.com"> 
                                 <img
