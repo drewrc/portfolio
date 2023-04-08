@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { animateScroll } from 'react-scroll';
 import SkillsPreview from './SkillsPreview';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownLong } from '@fortawesome/free-solid-svg-icons';
+import { faDownLong, faLeaf, faMugHot, faSeedling, faStarOfLife, faUserAstronaut, faWandMagic, faWandSparkles } from '@fortawesome/free-solid-svg-icons';
 
 function Main() {
   const containerRef = useRef(null);
@@ -111,17 +111,30 @@ function Main() {
 <>
   <main>
     <Container>
-      <Row>
-        <Col>
+      <Row
+      >
+        <Col
+        
+        >
 
         <div id="main-wrapper">
-          <div id="main-container">
+          <div 
+          
+          id="main-container">
             <div id="main-container-text">
-              <h4 style={{ ...h4initialStyle, ...h4Style }}> hello, my name is</h4>
+              <h4 style={{ ...h4initialStyle, ...h4Style }}> 
+              {/* <FontAwesomeIcon icon={faUserAstronaut} style= {{
+                paddingRight: '10px',
+              }}/> */}
+              // hello, my name is</h4>
               <h3 className="main-container" id="header-main">
                 Drew
               </h3>
-              <h2 style={{ ...h2initialStyle, ...h2Style }} id="header-minor"><p>full-stack software engineer</p></h2>
+              <h2 style={{ ...h2initialStyle, ...h2Style }} id="header-minor"><p>
+              <FontAwesomeIcon icon={faUserAstronaut} style= {{
+                paddingRight: '10px',
+              }}/>
+                full-stack software engineer </p></h2>
             </div>
           </div>
           </div>
