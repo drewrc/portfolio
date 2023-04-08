@@ -58,8 +58,10 @@ function SideBarContact() {
         onClick={() => animateScroll.scrollToBottom()}
         >
           <FontAwesomeIcon icon={faEnvelope} />
-         
         </button>
+      </div>
+      <div className='line'>
+a
       </div>
     </>
   );
