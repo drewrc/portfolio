@@ -1,7 +1,9 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { animateScroll } from 'react-scroll';
 import SkillsPreview from './SkillsPreview';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownLong } from '@fortawesome/free-solid-svg-icons';
 
 function Main() {
   const containerRef = useRef(null);
@@ -17,23 +19,6 @@ function Main() {
     }
   }, []);
 
-  // Scroll to a specific location after 5 seconds
-  useEffect(() => {
-    setTimeout(() => {
-      const container = containerRef.current;
-      if (container) {
-        const icons = container.querySelectorAll('.icon');
-        const iconTop = icons[0].offsetTop;
-        const containerTop = container.offsetTop;
-        const offset = iconTop - containerTop + 300;
-
-        animateScroll.scrollTo(offset, {
-          duration: 1500,
-          ease: 'easeInOutCubic',
-        });
-      }
-    }, 5000);
-  }, []);
 
   // Fade in the icons when the container is scrolled into view
   useEffect(() => {
@@ -62,39 +47,115 @@ function Main() {
     }
   };
 
+  const [h2Style, setH2Style] = useState({});
+  const [h4Style, setH4Style] = useState({});
+
+  useEffect(() => {
+    const h2Timer = setTimeout(() => {
+      setH2Style({
+        transform: 'translateX(0)',
+        opacity: 1,
+        transition: 'transform 2s ease-in-out, opacity 4s ease-in-out',
+      });
+    }, 1500); 
+
+    const h4Timer = setTimeout(() => {
+      setH4Style({
+        transform: 'translateX(0)',
+        opacity: 1,
+        transition: 'transform 2s ease-in-out, opacity 4s ease-in-out',
+      });
+    }, 500); 
+
+    return () => {
+      clearTimeout(h2Timer);
+      clearTimeout(h4Timer);
+    };
+  }, []);
+
+  const h4initialStyle = {
+    transform: 'translateX(100%)',
+    opacity: 0,
+  };
+  const h2initialStyle = {
+    transform: 'translateX(-100%)',
+    opacity: 0,
+  };
+
+  const [buttonStyle, setButtonStyle] = useState({});
+
+
+  useEffect(() => {
+    // ...existing code for h2 and h4 animations...
+  
+    const buttonTimer = setTimeout(() => {
+      setButtonStyle({
+        transform: 'translateY(0)',
+        opacity: 1,
+        transition: 'transform 1s ease-in-out, opacity 1s ease-in-out',
+      });
+    }, 2500); // adjust delay as needed
+  
+    return () => {
+      // ...existing clearTimeout calls...
+      clearTimeout(buttonTimer);
+    };
+  }, []);
+
+  const buttonInitialStyle = {
+    transform: 'translateY(100%)',
+    opacity: 0,
+  };
+
   return (
-    <>
-      <main>
+<>
+  <main>
+    <Container>
+      <Row>
+        <Col>
+
         <div id="main-wrapper">
           <div id="main-container">
             <div id="main-container-text">
-              <h4> Hello, my name is</h4>
+              <h4 style={{ ...h4initialStyle, ...h4Style }}> hello, my name is</h4>
               <h3 className="main-container" id="header-main">
                 Drew
               </h3>
-              <h2 id="header-minor">I'm excited to share my work with you.</h2>
+              <h2 style={{ ...h2initialStyle, ...h2Style }} id="header-minor"><p>full-stack software engineer</p></h2>
             </div>
           </div>
-          <div
-            style={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}
-          >
-            <SkillsPreview containerRef={containerRef} />
           </div>
-        </div>
 
-        <div className="board">
-          <div className="square"></div>
-          <div className="square"></div>
-          <div className="square"></div>
-          <div className="square"></div>
-          <div className="square"></div>
-          <div className="square"></div>
-          <div className="square"></div>
-        </div>
+
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <div
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
+            >
+              <SkillsPreview containerRef={containerRef} />
+            </div>
+            <button
+              style={{ ...buttonInitialStyle, ...buttonStyle }}
+              className="scroll-down-button"
+              onClick={() => animateScroll.scrollToBottom()}
+            >
+              <div className="vertical-text">Scroll</div>
+              <div className="vertical-text">Down</div>
+              <div>
+              <FontAwesomeIcon icon={faDownLong} />
+              </div>
+            </button>
+
+
+        </Col>
+      </Row>
+    </Container>
       </main>
     </>
   );
