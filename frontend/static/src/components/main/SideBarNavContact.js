@@ -35,7 +35,6 @@ function SideBarContact() {
         <button
         style={{ ...buttonInitialStyle, ...buttonStyle }}
         className="no-bubble"
-        onClick={() => animateScroll.scrollToBottom()}
         >
          <a 
             href="https://www.linkedin.com/in/drew-coker/"> 
@@ -45,22 +44,25 @@ function SideBarContact() {
         <button
         style={{ ...buttonInitialStyle, ...buttonStyle }}
         className="side-contact"
-        onClick={() => animateScroll.scrollToBottom()}
         >
         <a 
-            href="https://www.linkedin.com/in/drew-coker/"> 
+            href="https://github.com/drewrc/"> 
         <img src={github} width="90%" style={{ filter: "brightness(1%) saturate(100%) invert(16%)" }}/></a>
          
         </button>
+        <a href="mailto:drewrosecoker@gmail.com">
         <button
-        style={{ ...buttonInitialStyle, ...buttonStyle }}
-        className="side-contact"
-        onClick={() => animateScroll.scrollToBottom()}
+          style={{ ...buttonInitialStyle, ...buttonStyle }}
+          className="side-contact"
         >
           <FontAwesomeIcon icon={faEnvelope} />
         </button>
+      </a>
+
       </div>
-      <div className='line'>
+      <div
+        style={{ ...buttonInitialStyle, ...buttonStyle }}
+      className='line'>
 a
       </div>
     </>

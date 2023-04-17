@@ -170,6 +170,14 @@ table {
   padding-top: 2%;
   padding-right: 2%;
   padding-bottom: 2%;
+  /* background-image: repeating-linear-gradient(
+    130deg,
+    transparent,
+    transparent 95px,
+    rgba(56, 14, 123, 1) 405px,
+    rgba(33, 17, 41, 0.4) 105px
+  );
+  background-size: 10% calc(100% / 1); */
 
 
 }

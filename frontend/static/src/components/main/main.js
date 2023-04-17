@@ -129,7 +129,7 @@ function Main() {
               <FontAwesomeIcon icon={faUserAstronaut} style= {{
                 paddingRight: '10px',
               }}/>
-                full-stack software engineer </p></h2>
+                full-stack software engineer  </p></h2>
             </div>
           </div>
           </div>
