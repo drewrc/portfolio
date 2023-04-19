@@ -164,43 +164,19 @@ table {
   position: relative;
   z-index: 100;
   margin-top: 0%;
-  /* background-color: rgba(253, 251, 255, 0.1); */
   width: 80vw;
   padding-left: 7%;
   padding-top: 2%;
   padding-right: 2%;
   padding-bottom: 2%;
-  /* background-image: repeating-linear-gradient(
-    130deg,
-    transparent,
-    transparent 95px,
-    rgba(56, 14, 123, 1) 405px,
-    rgba(33, 17, 41, 0.4) 105px
-  );
-  background-size: 10% calc(100% / 1); */
-
-
 }
 
 #header-main:hover {
   content: '';
-  /* animation: ripple 10s linear; */
 }
 
-/* @keyframes ripple {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-} */
 .scroll-down-button {
   position: fixed;
-  /* height: 80vh; */
   bottom: 10%;
   right: 20px;
   background-color: #1a1a1a;
@@ -222,7 +198,6 @@ table {
 
 .vertical-text {
   writing-mode: vertical-lr;
-  /* writing-mode: vertical-lr; */
   margin: 2.5px;
   letter-spacing: 2px;
 }
@@ -322,31 +297,17 @@ h4 {
 #icons-wrapper {
   background-color: rgb(255, 254, 254, 0.1);
   text-align: center;
-  /* width: 100vw; */
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0;
   flex-direction: row;
-  /* justify-content: center;
-  align-items: center; */
-  /* margin-top: 10%; */
-  /* margin-bottom: 10%; */
-
   padding-bottom: 5%;
-  /* margin-right: 5%;
-  margin-left: 5%; */
   margin-top: -15%;
   z-index: 100;
   border-radius: 10px;
   width: 90%;
 }
-/* @keyframes fadeIn {
-  from { opacity: 0; transform: translate(0, 20px); }
-  to { opacity: 1; transform: translate(0, 0); }
-} */
-
-
 
 @media screen and (min-width: 1200px) {
   #header-main {
@@ -393,11 +354,8 @@ h4 {
   }
   #main-container {
     position: relative;
-    /* height: 200vh;  */
     margin-left: 0%;
     margin-right: 0%;
-    /* padding-left: 10%;
-    padding-right: 10%; */
     margin-bottom: 0%;
   }
   #main-container-text {
@@ -405,7 +363,6 @@ h4 {
  
   }
   .education-item {
-    /* margin-left: 20%; */
   }
   h4 {
     font-size: 22px !important;
@@ -709,12 +666,8 @@ li {
     width: 100%;
   }
   .square {
-    /* height: 150px;
-    width: 150px; */
   }
   .board {
-    /* position: absolute;
-    bottom: 0px; */
   }
   .about-list-item-content {
     font-size: 15px;
@@ -724,9 +677,6 @@ li {
   }
   #header-about {
     font-size: 70px;
-    /* padding-right: 10%; */
-
-    /* margin-right: -30%; */
   }
   #about-1 {
     /* margin-left: -20%; */
